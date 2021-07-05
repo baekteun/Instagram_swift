@@ -27,6 +27,7 @@ class CustomTextField: UITextField{
                                                    attributes: [.foregroundColor: UIColor(white: 1, alpha: 0.7)])
         
         
+        
     }
     
     required init?(coder: NSCoder) {

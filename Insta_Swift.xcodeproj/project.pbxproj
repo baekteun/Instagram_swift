@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		46771F7E26905D1200205646 /* Insta_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46771F7C26905D1200205646 /* Insta_Swift.xcdatamodeld */; };
-		46771FEB2690613000205646 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46771FD22690613000205646 /* ViewController.swift */; };
 		46771FEC2690613000205646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46771FD32690613000205646 /* AppDelegate.swift */; };
 		46772002269061C000205646 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46772001269061C000205646 /* SceneDelegate.swift */; };
 		467720272690628600205646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46771F7F26905D1400205646 /* Assets.xcassets */; };
@@ -24,18 +23,22 @@
 		46974F432690654100B10D39 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46974F3B2690654000B10D39 /* LoginController.swift */; };
 		46974F442690654100B10D39 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46974F3C2690654000B10D39 /* ProfileController.swift */; };
 		46974F452690654100B10D39 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46974F3D2690654100B10D39 /* SearchController.swift */; };
+		46974F472692DE6A00B10D39 /* AuthenicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46974F462692DE6A00B10D39 /* AuthenicationViewModel.swift */; };
+		46974F4E2693291900B10D39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46974F4D2693291900B10D39 /* GoogleService-Info.plist */; };
+		46974F5026933E9500B10D39 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46974F4F26933E9500B10D39 /* ImageUploader.swift */; };
+		46974F5226933EAA00B10D39 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46974F5126933EAA00B10D39 /* AuthService.swift */; };
+		CE5331620F15F25873252634 /* Pods_Insta_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5DFACD56721B0952CDBC9A /* Pods_Insta_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0004FFA1E63A6B41D9F74EE0 /* Pods-Insta_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insta_Swift.release.xcconfig"; path = "Target Support Files/Pods-Insta_Swift/Pods-Insta_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		46771F7026905D1200205646 /* Insta_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insta_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		46771F7A26905D1200205646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46771F7D26905D1200205646 /* Insta_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Insta_Swift.xcdatamodel; sourceTree = "<group>"; };
 		46771F7F26905D1400205646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46771F8226905D1400205646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46771F8426905D1400205646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46771FD22690613000205646 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../Swift_insta/Swift_insta/ViewController.swift; sourceTree = "<group>"; };
-		46771FD32690613000205646 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../Swift_insta/Swift_insta/AppDelegate.swift; sourceTree = "<group>"; };
-		46772001269061C000205646 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../Swift_insta/Swift_insta/SceneDelegate.swift; sourceTree = "<group>"; };
+		46771FD32690613000205646 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46772001269061C000205646 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		46974F2D269064FE00B10D39 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		46974F2E269064FE00B10D39 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		46974F2F269064FE00B10D39 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -48,6 +51,13 @@
 		46974F3B2690654000B10D39 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		46974F3C2690654000B10D39 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		46974F3D2690654100B10D39 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		46974F462692DE6A00B10D39 /* AuthenicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenicationViewModel.swift; sourceTree = "<group>"; };
+		46974F482692FA1500B10D39 /* Insta_Swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Insta_Swift.entitlements; sourceTree = "<group>"; };
+		46974F4D2693291900B10D39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		46974F4F26933E9500B10D39 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		46974F5126933EAA00B10D39 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		7E153084015DFF6B57322A7C /* Pods-Insta_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insta_Swift.debug.xcconfig"; path = "Target Support Files/Pods-Insta_Swift/Pods-Insta_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		CC5DFACD56721B0952CDBC9A /* Pods_Insta_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insta_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5331620F15F25873252634 /* Pods_Insta_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +77,8 @@
 			children = (
 				46771F7226905D1200205646 /* Insta_Swift */,
 				46771F7126905D1200205646 /* Products */,
+				F61F6CE2AC37CA4FB589C1C3 /* Pods */,
+				6732D4204F4E4A80F6295770 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +93,7 @@
 		46771F7226905D1200205646 /* Insta_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				46974F482692FA1500B10D39 /* Insta_Swift.entitlements */,
 				46974F27269064A800B10D39 /* Model */,
 				46974F28269064B200B10D39 /* View */,
 				46974F29269064B900B10D39 /* ViewModel */,
@@ -87,12 +101,11 @@
 				46974F2B269064D600B10D39 /* API */,
 				46974F2C269064DB00B10D39 /* Utils */,
 				46771FD32690613000205646 /* AppDelegate.swift */,
-				46771FD22690613000205646 /* ViewController.swift */,
 				46772001269061C000205646 /* SceneDelegate.swift */,
-				46771F7926905D1200205646 /* Main.storyboard */,
 				46771F7F26905D1400205646 /* Assets.xcassets */,
 				46771F8126905D1400205646 /* LaunchScreen.storyboard */,
 				46771F8426905D1400205646 /* Info.plist */,
+				46974F4D2693291900B10D39 /* GoogleService-Info.plist */,
 				46771F7C26905D1200205646 /* Insta_Swift.xcdatamodeld */,
 			);
 			path = Insta_Swift;
@@ -118,6 +131,7 @@
 		46974F29269064B900B10D39 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				46974F462692DE6A00B10D39 /* AuthenicationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -125,7 +139,7 @@
 		46974F2A269064CD00B10D39 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				46974F392690654000B10D39 /* Authentication */,
+				46974F392690654000B10D39 /* Authenication */,
 				46974F382690654000B10D39 /* MainTabController.swift */,
 				46974F352690654000B10D39 /* FeedController.swift */,
 				46974F372690654000B10D39 /* ImageSelectorController.swift */,
@@ -139,6 +153,8 @@
 		46974F2B269064D600B10D39 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				46974F4F26933E9500B10D39 /* ImageUploader.swift */,
+				46974F5126933EAA00B10D39 /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -151,13 +167,30 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		46974F392690654000B10D39 /* Authentication */ = {
+		46974F392690654000B10D39 /* Authenication */ = {
 			isa = PBXGroup;
 			children = (
 				46974F3B2690654000B10D39 /* LoginController.swift */,
 				46974F3A2690654000B10D39 /* RegistrationController.swift */,
 			);
-			path = Authentication;
+			path = Authenication;
+			sourceTree = "<group>";
+		};
+		6732D4204F4E4A80F6295770 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC5DFACD56721B0952CDBC9A /* Pods_Insta_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F61F6CE2AC37CA4FB589C1C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E153084015DFF6B57322A7C /* Pods-Insta_Swift.debug.xcconfig */,
+				0004FFA1E63A6B41D9F74EE0 /* Pods-Insta_Swift.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46771F8726905D1400205646 /* Build configuration list for PBXNativeTarget "Insta_Swift" */;
 			buildPhases = (
+				23B3BD6B0A0D3F3B6955E6A2 /* [CP] Check Pods Manifest.lock */,
 				46771F6C26905D1200205646 /* Sources */,
 				46771F6D26905D1200205646 /* Frameworks */,
 				46771F6E26905D1200205646 /* Resources */,
+				9DB019C805FAB401E261E3AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,10 +253,53 @@
 			buildActionMask = 2147483647;
 			files = (
 				467720272690628600205646 /* Assets.xcassets in Resources */,
+				46974F4E2693291900B10D39 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23B3BD6B0A0D3F3B6955E6A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Insta_Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DB019C805FAB401E261E3AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Insta_Swift/Pods-Insta_Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Insta_Swift/Pods-Insta_Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Insta_Swift/Pods-Insta_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46771F6C26905D1200205646 /* Sources */ = {
@@ -230,6 +308,8 @@
 			files = (
 				46974F402690654100B10D39 /* ImageSelectorController.swift in Sources */,
 				46974F3F2690654100B10D39 /* NotificationController.swift in Sources */,
+				46974F5026933E9500B10D39 /* ImageUploader.swift in Sources */,
+				46974F5226933EAA00B10D39 /* AuthService.swift in Sources */,
 				46974F412690654100B10D39 /* MainTabController.swift in Sources */,
 				46974F32269064FE00B10D39 /* CustomTextField.swift in Sources */,
 				46771FEC2690613000205646 /* AppDelegate.swift in Sources */,
@@ -237,27 +317,19 @@
 				46974F30269064FE00B10D39 /* FeedCell.swift in Sources */,
 				46974F342690652100B10D39 /* Extensions.swift in Sources */,
 				46974F31269064FE00B10D39 /* CustomButton.swift in Sources */,
-				46771FEB2690613000205646 /* ViewController.swift in Sources */,
 				46772002269061C000205646 /* SceneDelegate.swift in Sources */,
 				46974F452690654100B10D39 /* SearchController.swift in Sources */,
 				46974F3E2690654100B10D39 /* FeedController.swift in Sources */,
 				46771F7E26905D1200205646 /* Insta_Swift.xcdatamodeld in Sources */,
 				46974F422690654100B10D39 /* RegistrationController.swift in Sources */,
 				46974F432690654100B10D39 /* LoginController.swift in Sources */,
+				46974F472692DE6A00B10D39 /* AuthenicationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		46771F7926905D1200205646 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46771F7A26905D1200205646 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		46771F8126905D1400205646 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -387,9 +459,11 @@
 		};
 		46771F8826905D1400205646 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E153084015DFF6B57322A7C /* Pods-Insta_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Insta_Swift/Insta_Swift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Insta_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -405,9 +479,11 @@
 		};
 		46771F8926905D1400205646 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0004FFA1E63A6B41D9F74EE0 /* Pods-Insta_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Insta_Swift/Insta_Swift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Insta_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
