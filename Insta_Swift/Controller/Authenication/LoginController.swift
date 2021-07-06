@@ -39,6 +39,7 @@ class LoginController: UIViewController{
     private let loginButton: UIButton = {
         let button = CustomButton(placeholder: "Log in")
         button.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.5)
+        button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         button.isEnabled = false
         
         return button
@@ -68,6 +69,19 @@ class LoginController: UIViewController{
     }
     
     // MARK: - Actions
+    
+    @objc func handleLogin(){
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        AuthService.logUserIn(withEmail: email, password: password) { (result, error) in
+            if let error = error {
+                print("DEUBG Failed to login \(error.localizedDescription)")
+                return
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
     @objc func handleShowSignup(){
         let controller = RegistrationController()
         navigationController?.pushViewController(controller, animated: true)
