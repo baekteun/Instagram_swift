@@ -113,6 +113,7 @@ class ProfileHeader:UICollectionReusableView{
         let btnStack = UIStackView(arrangedSubviews: [gridButton, listButton, bookmarkButton])
         btnStack.distribution = .fillEqually
         
+        
         addSubview(btnStack)
         addSubview(topDivider)
         addSubview(bottomDivider)
