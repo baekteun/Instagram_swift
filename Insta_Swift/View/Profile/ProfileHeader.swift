@@ -6,13 +6,19 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ProfileHeader:UICollectionReusableView{
     
     // MARK: - Properties
+    
+    var viewModel: ProfileHeaderViewModel? {
+        didSet{ configure()}
+    }
+    
     private let profileImageView: UIImageView = {
         let iv =  UIImageView()
-        iv.image = #imageLiteral(resourceName: "용조련사 딩거")
+        iv.backgroundColor = .lightGray
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         return iv
@@ -136,6 +142,12 @@ class ProfileHeader:UICollectionReusableView{
     }
     
     // MARK: - Helpers
+    
+    func configure(){
+        guard let viewModel = viewModel else { return }
+        nameLabel.text = viewModel.fullname
+        profileImageView.sd_setImage(with: viewModel.profileImage)
+    }
     
     func attributedStatText(value: Int, label: String) -> NSAttributedString {
         let attributedText = NSMutableAttributedString(string: "\(value)\n", attributes: [.font : UIFont.boldSystemFont(ofSize: 14)])
