@@ -54,7 +54,16 @@ extension SearchController{
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuserIdentifier, for: indexPath) as! UserCell
-        cell.user = users[indexPath.row]
+        cell.viewModel = UserCellViewModel(user: users[indexPath.row])
+
         return cell
+    }
+}
+
+extension SearchController{
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let controller = ProfileController(user: users[indexPath.row])
+        navigationController?.pushViewController(controller, animated: true)
+        
     }
 }

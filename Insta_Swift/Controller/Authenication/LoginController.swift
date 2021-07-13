@@ -6,10 +6,14 @@
 //
 
 import UIKit
-
+protocol AuthencationDelegate: class {
+    func authenationDidComplete()
+}
 class LoginController: UIViewController{
     
     // MARK: - Properties
+    
+    weak var delegate: AuthencationDelegate?
     
     private var viewModel = LoginViewModel()
     
@@ -78,12 +82,14 @@ class LoginController: UIViewController{
                 print("DEUBG Failed to login \(error.localizedDescription)")
                 return
             }
-            self.dismiss(animated: true, completion: nil)
+            self.delegate?.authenationDidComplete()
+            
         }
     }
     
     @objc func handleShowSignup(){
         let controller = RegistrationController()
+        controller.delegate = delegate
         navigationController?.pushViewController(controller, animated: true)
     }
     

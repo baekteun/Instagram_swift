@@ -15,7 +15,6 @@ extension UIViewController{
         gradient.locations = [0,1]
         view.layer.addSublayer(gradient)
         gradient.frame = view.frame
-        
     }
 }
 
