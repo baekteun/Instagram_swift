@@ -147,6 +147,10 @@ class ProfileHeader:UICollectionReusableView{
         guard let viewModel = viewModel else { return }
         nameLabel.text = viewModel.fullname
         profileImageView.sd_setImage(with: viewModel.profileImage)
+        
+        editProfileFollowBtn.setTitle(viewModel.follwButtonText, for: .normal)
+        editProfileFollowBtn.setTitleColor(viewModel.followBtnTextColor, for: .normal)
+        editProfileFollowBtn.backgroundColor = viewModel.followBtnBackgroundColor
     }
     
     func attributedStatText(value: Int, label: String) -> NSAttributedString {
