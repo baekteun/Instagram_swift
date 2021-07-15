@@ -41,12 +41,7 @@ class ProfileController: UICollectionViewController{
     
     // MARK: - API
     
-    func fetchUser(){
-        UserService.fetchUser { user in
-            self.user = user
-            
-        }
-    }
+   
     
     // MARK: - Helpers
     
@@ -73,8 +68,8 @@ extension ProfileController{
         return cell
     }
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        print("DEBUG did call header function")
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: HeaderIdentifier, for: indexPath) as! ProfileHeader
+        header.delegate = self
         if let user = user{
             header.viewModel = ProfileHeaderViewModel(user: user)
         }
@@ -105,6 +100,24 @@ extension ProfileController:UICollectionViewDelegateFlowLayout {
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: view.frame.width, height: 240)
+    }
+    
+    
+}
+
+
+// MARK: - profileHeaderDelegate
+extension ProfileController: profileHeaderDelegate{
+    func header(_ profilHeader: ProfileHeader, didTapActionButtonFor user: User) {
+        if user.isCurrentUser{
+            print("DEBUG editProfile")
+        }else if user.isFollowed{
+            print("DEBUG unfollow")
+        }else{
+            UserService.followUsesr(uid: user.uid){ error in
+                print("DEBUG did follow user ")
+            }
+        }
     }
     
     

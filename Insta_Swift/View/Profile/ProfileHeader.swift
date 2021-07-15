@@ -10,8 +10,7 @@ import SDWebImage
 
 
 protocol profileHeaderDelegate: class{
-    func header(_ profilHeader: ProfileHeader, wantsToFollow uid: String)
-    
+    func header(_ profilHeader: ProfileHeader, didTapActionButtonFor user: User)
 }
 
 class ProfileHeader:UICollectionReusableView{
@@ -21,6 +20,8 @@ class ProfileHeader:UICollectionReusableView{
     var viewModel: ProfileHeaderViewModel? {
         didSet{ configure()}
     }
+    
+    weak var delegate: profileHeaderDelegate?
     
     private let profileImageView: UIImageView = {
         let iv =  UIImageView()
@@ -46,7 +47,7 @@ class ProfileHeader:UICollectionReusableView{
         button.layer.borderWidth = 0.5
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.setTitleColor(.black, for: .normal)
-        button.addTarget(self, action: #selector(handleEditProfile), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleEditProfileFollowTapped), for: .touchUpInside)
         return button
     }()
     
@@ -143,8 +144,9 @@ class ProfileHeader:UICollectionReusableView{
     
     // MARK: - Actions
     
-    @objc func handleEditProfile(){
-        print("DEBUG")
+    @objc func handleEditProfileFollowTapped(){
+        guard let viewModel = viewModel else { return }
+        delegate?.header(self, didTapActionButtonFor: viewModel.user)
     }
     
     // MARK: - Helpers
