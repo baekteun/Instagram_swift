@@ -8,6 +8,12 @@
 import UIKit
 import SDWebImage
 
+
+protocol profileHeaderDelegate: class{
+    func header(_ profilHeader: ProfileHeader, wantsToFollow uid: String)
+    
+}
+
 class ProfileHeader:UICollectionReusableView{
     
     // MARK: - Properties
