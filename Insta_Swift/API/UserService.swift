@@ -54,4 +54,15 @@ struct UserService{
             completions(isFollowed)
         }
     }
+    
+    static func fetchchUserStats(uid: String, completion: @escaping(UserStats) -> Void){
+        COLLECTION_FOLLOWERS.document(uid).collection("user-followers").getDocuments{ (snapshot, _) in
+            let followers = snapshot?.documents.count ?? 0
+            
+            COLLECTION_FOLLOWING.document(uid).collection("user-following").getDocuments{ (shapshot, _) in
+                let following = shapshot?.documents.count ?? 0
+                completion(UserStats(followers: followers, following: following))
+            }
+        }
+    }
 }
