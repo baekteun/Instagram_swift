@@ -15,11 +15,7 @@ class ProfileController: UICollectionViewController{
     
     // MARK: - Properties
     
-    var user: User?{
-        didSet{
-            collectionView.reloadData()
-        }
-    }
+    private var user: User
     
     
     // MARK: - Lifecycle
@@ -46,7 +42,7 @@ class ProfileController: UICollectionViewController{
     // MARK: - Helpers
     
     func configureCollectionView(){
-        self.navigationItem.title = user?.username
+        self.navigationItem.title = user.username
         collectionView.backgroundColor = .white
         collectionView.register(ProfileCell.self, forCellWithReuseIdentifier: CellIdentifier)
         collectionView.register(ProfileHeader.self,
@@ -70,9 +66,8 @@ extension ProfileController{
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: HeaderIdentifier, for: indexPath) as! ProfileHeader
         header.delegate = self
-        if let user = user{
-            header.viewModel = ProfileHeaderViewModel(user: user)
-        }
+        header.viewModel = ProfileHeaderViewModel(user: user)
+        
         return header
     }
     
@@ -112,10 +107,14 @@ extension ProfileController: profileHeaderDelegate{
         if user.isCurrentUser{
             print("DEBUG editProfile")
         }else if user.isFollowed{
-            print("DEBUG unfollow")
+            UserService.unfollowUer(uid: user.uid){ error in
+                self.user.isFollowed = false
+                self.collectionView.reloadData()
+            }
         }else{
             UserService.followUsesr(uid: user.uid){ error in
-                print("DEBUG did follow user ")
+                self.user.isFollowed = true
+                self.collectionView.reloadData()
             }
         }
     }
