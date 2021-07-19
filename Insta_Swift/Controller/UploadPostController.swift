@@ -23,6 +23,14 @@ class UploadPostController: UIViewController{
         
         return tv
     }()
+
+    private let characterCountLabel: UILabel = {
+         let lb = UILabel()
+        lb.textColor = .lightGray
+        lb.font = UIFont.systemFont(ofSize: 14)
+        lb.text = "0/100"
+        return lb
+    }()
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -52,5 +60,8 @@ class UploadPostController: UIViewController{
         
         view.addSubview(captionTextView)
         captionTextView.anchor(top: photoImageView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16, paddingLeft: 12, paddingRight: 12, height: 64)
+        
+        view.addSubview(characterCountLabel)
+        characterCountLabel.anchor(bottom: captionTextView .bottomAnchor, right: view.rightAnchor, paddingRight: 12)
     }
 }
