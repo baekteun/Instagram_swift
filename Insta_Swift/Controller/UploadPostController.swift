@@ -83,6 +83,5 @@ extension UploadPostController: UITextViewDelegate{
         checkMaxLength(textView)
         let  count = textView.text.count
         characterCountLabel.text = "\(count)/100"
-        captionTextView.placeholderLabel.isHidden =  !captionTextView.text.isEmpty
     }
 }
