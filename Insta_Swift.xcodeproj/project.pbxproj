@@ -35,6 +35,7 @@
 		4697503926997A9F00B10D39 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4697503826997A9F00B10D39 /* UserCell.swift */; };
 		4697503B269AD5B600B10D39 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4697503A269AD5B600B10D39 /* ProfileHeaderViewModel.swift */; };
 		46975082269D08CD00B10D39 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46975081269D08CD00B10D39 /* UserCellViewModel.swift */; };
+		469750A726A5318600B10D39 /* UploadPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469750A626A5318600B10D39 /* UploadPostController.swift */; };
 		CE5331620F15F25873252634 /* Pods_Insta_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5DFACD56721B0952CDBC9A /* Pods_Insta_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		4697503826997A9F00B10D39 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		4697503A269AD5B600B10D39 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		46975081269D08CD00B10D39 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
+		469750A626A5318600B10D39 /* UploadPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostController.swift; sourceTree = "<group>"; };
 		7E153084015DFF6B57322A7C /* Pods-Insta_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insta_Swift.debug.xcconfig"; path = "Target Support Files/Pods-Insta_Swift/Pods-Insta_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		CC5DFACD56721B0952CDBC9A /* Pods_Insta_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insta_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -167,6 +169,7 @@
 				46974F362690654000B10D39 /* NotificationController.swift */,
 				46974F3D2690654100B10D39 /* SearchController.swift */,
 				46974F3C2690654000B10D39 /* ProfileController.swift */,
+				469750A626A5318600B10D39 /* UploadPostController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				46974F5226933EAA00B10D39 /* AuthService.swift in Sources */,
 				46974F412690654100B10D39 /* MainTabController.swift in Sources */,
 				46974F32269064FE00B10D39 /* CustomTextField.swift in Sources */,
+				469750A726A5318600B10D39 /* UploadPostController.swift in Sources */,
 				46771FEC2690613000205646 /* AppDelegate.swift in Sources */,
 				4697503926997A9F00B10D39 /* UserCell.swift in Sources */,
 				46974F442690654100B10D39 /* ProfileController.swift in Sources */,
