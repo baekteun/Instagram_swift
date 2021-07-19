@@ -90,12 +90,16 @@ class MainTabController: UITabBarController{
         picker.didFinishPicking{ items, _ in
             picker.dismiss(animated: true){
                 guard let selectedImage = items.singlePhoto?.image else { return }
-                print("DEBUG \(selectedImage)")
+                
+                let controller = UploadPostController()
+                let nav = UINavigationController(rootViewController: controller)
+                nav.modalPresentationStyle = .fullScreen
+                self.present(nav, animated: true, completion: nil)
             }
         }
     }
-    
 }
+ 
 
 // MARK: - AuthencationDelegate
 
