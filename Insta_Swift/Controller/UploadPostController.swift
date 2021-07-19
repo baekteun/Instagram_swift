@@ -46,7 +46,7 @@ class UploadPostController: UIViewController{
     }
     
     @objc func didTapDone(){
-        print("DEBUG did tap Done")
+        
     }
     
     
