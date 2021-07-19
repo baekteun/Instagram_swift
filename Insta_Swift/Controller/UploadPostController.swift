@@ -10,11 +10,17 @@ import UIKit
 class UploadPostController: UIViewController{
     // MARK: - Properties
     
+    var selectedImage: UIImage?{
+        didSet{
+            photoImageView.image = selectedImage
+        }
+    }
+    
     private let photoImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
-        iv.image = #imageLiteral(resourceName: "용조련사 딩거")
+        
         return iv
     }()
     
@@ -46,7 +52,15 @@ class UploadPostController: UIViewController{
     }
     
     @objc func didTapDone(){
-        
+        guard let image = selectedImage else { return }
+        guard let caption = captionTextView.text else { return }
+        PostService.uploadPost(caption: caption, image: image){ error in
+            if let error = error{
+                print("DEUG failed to upload image \(error.localizedDescription)")
+                return
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     
