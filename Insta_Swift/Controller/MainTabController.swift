@@ -94,7 +94,7 @@ class MainTabController: UITabBarController{
                 let controller = UploadPostController()
                 let nav = UINavigationController(rootViewController: controller)
                 nav.modalPresentationStyle = .fullScreen
-                self.present(nav, animated: true, completion: nil)
+                self.present(nav, animated: false, completion: nil)
             }
         }
     }
