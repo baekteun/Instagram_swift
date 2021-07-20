@@ -1,20 +1,32 @@
 //
 //  Extensions.swift
-//  InstagramFirestoreTutorial
+//  Insta_Swift
 //
-//  Created by Stephen Dowless on 6/19/20.
-//  Copyright © 2020 Stephan Dowless. All rights reserved.
+//  Created by baegteun on 2021/06/29.
 //
+
 
 import UIKit
+import JGProgressHUD
 
 extension UIViewController{
+    static let hud = JGProgressHUD(style: .dark)
     func configureGradientLayer(){
         let gradient = CAGradientLayer()
         gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemBlue.cgColor]
         gradient.locations = [0,1]
         view.layer.addSublayer(gradient)
         gradient.frame = view.frame
+    }
+    
+    func showLoader(_ show: Bool){
+        view.endEditing(true)
+        
+        if show{
+            UIViewController.hud.show(in: view)
+        }else {
+            UIViewController.hud.dismiss()
+        }
     }
 }
 
