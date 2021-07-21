@@ -18,6 +18,7 @@ class FeedController: UICollectionViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        fetchUesr()
     }
     
     // MARK: - Actions
@@ -33,6 +34,11 @@ class FeedController: UICollectionViewController{
         } catch {
             print("DEBUG: failed to sign out")
         }
+    }
+    
+    // MARK: - API
+    func fetchUesr(){
+        PostService.fetchPost()
     }
     
     // MARK: - Helpers

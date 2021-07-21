@@ -68,7 +68,6 @@ class UploadPostController: UIViewController{
                 print("DEUG failed to upload image \(error.localizedDescription)")
                 return
             }
-            self.showLoader(false)
             self.delegate?.controllerDidFinishUploadingPost(self)
         }
     }

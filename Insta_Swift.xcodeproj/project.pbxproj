@@ -11,6 +11,7 @@
 		46771FEC2690613000205646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46771FD32690613000205646 /* AppDelegate.swift */; };
 		46772002269061C000205646 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46772001269061C000205646 /* SceneDelegate.swift */; };
 		467720272690628600205646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46771F7F26905D1400205646 /* Assets.xcassets */; };
+		4697078926A799E600736405 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4697078826A799E600736405 /* Post.swift */; };
 		46974F30269064FE00B10D39 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46974F2D269064FE00B10D39 /* FeedCell.swift */; };
 		46974F31269064FE00B10D39 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46974F2E269064FE00B10D39 /* CustomButton.swift */; };
 		46974F32269064FE00B10D39 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46974F2F269064FE00B10D39 /* CustomTextField.swift */; };
@@ -50,6 +51,7 @@
 		46771F8426905D1400205646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46771FD32690613000205646 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46772001269061C000205646 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4697078826A799E600736405 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		46974F2D269064FE00B10D39 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		46974F2E269064FE00B10D39 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		46974F2F269064FE00B10D39 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				46974F5C2694901700B10D39 /* User.swift */,
+				4697078826A799E600736405 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				46974F32269064FE00B10D39 /* CustomTextField.swift in Sources */,
 				469750A726A5318600B10D39 /* UploadPostController.swift in Sources */,
 				46771FEC2690613000205646 /* AppDelegate.swift in Sources */,
+				4697078926A799E600736405 /* Post.swift in Sources */,
 				4697503926997A9F00B10D39 /* UserCell.swift in Sources */,
 				46974F442690654100B10D39 /* ProfileController.swift in Sources */,
 				4697503B269AD5B600B10D39 /* ProfileHeaderViewModel.swift in Sources */,

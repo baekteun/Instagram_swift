@@ -21,4 +21,13 @@ struct PostService{
             COLLECTION_POSTS.addDocument(data: data, completion: completion)
         }
     }
+    
+    static func fetchPost(completions: @escaping([Post]) -> Void ){
+        COLLECTION_POSTS.getDocuments{ (snapshot, error) in
+            guard let data = snapshot?.documents else { return }
+            data.forEach{ doc in
+                print("DEBUG : \(doc.data())")
+            }
+        }
+    }
 }
