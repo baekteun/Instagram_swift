@@ -25,9 +25,9 @@ struct PostService{
     static func fetchPost(completions: @escaping([Post]) -> Void ){
         COLLECTION_POSTS.getDocuments{ (snapshot, error) in
             guard let data = snapshot?.documents else { return }
-            data.forEach{ doc in
-                print("DEBUG : \(doc.data())")
-            }
+             
+            let posts = data.map({ Post(postID: $0.documentID, dictionary: $0.data())})
+            completions(posts)
         }
     }
 }
