@@ -14,6 +14,12 @@ struct PostViewModel{
     var captions: String{
         return post.caption
     }
+    
+    var likes: Int{
+        return post.likes
+    }
+    
+    
     init(post: Post){
         self.post = post
     }
