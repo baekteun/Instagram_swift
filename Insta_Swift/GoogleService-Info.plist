@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>362915539992-cbfibng5lq6cobpj9tf4n8nkf286dq4d.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.362915539992-cbfibng5lq6cobpj9tf4n8nkf286dq4d</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBpL1h9GwP9xIloALxLIIC7U1VMaaK7N3I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>362915539992</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>baek.Insta-Swift</string>
+	<key>PROJECT_ID</key>
+	<string>insta-swift-baek</string>
+	<key>STORAGE_BUCKET</key>
+	<string>insta-swift-baek.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:362915539992:ios:91a0f2c68d72af58ba276d</string>
+</dict>
+</plist>
