@@ -16,6 +16,8 @@ class UploadPostController: UIViewController{
     
     weak var delegate: UploadPostControllerDelegate?
     
+    var currentUser: User?
+    
     var selectedImage: UIImage?{
         didSet{
             photoImageView.image = selectedImage
