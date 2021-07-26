@@ -25,7 +25,7 @@ struct PostService{
     }
     
     static func fetchPost(completions: @escaping([Post]) -> Void ){
-        COLLECTION_POSTS.order(by: "timestamp").getDocuments{ (snapshot, error) in
+        COLLECTION_POSTS.order(by: "timestamp",descending: true).getDocuments{ (snapshot, error) in
             guard let data = snapshot?.documents else { return }
              
             let posts = data.map({ Post(postID: $0.documentID, dictionary: $0.data())})
