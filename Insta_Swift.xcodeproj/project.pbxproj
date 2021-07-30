@@ -40,6 +40,8 @@
 		469750A726A5318600B10D39 /* UploadPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469750A626A5318600B10D39 /* UploadPostController.swift */; };
 		469750A926A534E000B10D39 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469750A826A534E000B10D39 /* InputTextView.swift */; };
 		469750AD26A5429300B10D39 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469750AC26A5429300B10D39 /* PostService.swift */; };
+		46BE1BCA26B3B6A2002E6DEC /* CommentConrtoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE1BC926B3B6A2002E6DEC /* CommentConrtoller.swift */; };
+		46BE1BCC26B3B803002E6DEC /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE1BCB26B3B803002E6DEC /* CommentCell.swift */; };
 		CE5331620F15F25873252634 /* Pods_Insta_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5DFACD56721B0952CDBC9A /* Pods_Insta_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		469750A626A5318600B10D39 /* UploadPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostController.swift; sourceTree = "<group>"; };
 		469750A826A534E000B10D39 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		469750AC26A5429300B10D39 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		46BE1BC926B3B6A2002E6DEC /* CommentConrtoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentConrtoller.swift; sourceTree = "<group>"; };
+		46BE1BCB26B3B803002E6DEC /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		7E153084015DFF6B57322A7C /* Pods-Insta_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insta_Swift.debug.xcconfig"; path = "Target Support Files/Pods-Insta_Swift/Pods-Insta_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		CC5DFACD56721B0952CDBC9A /* Pods_Insta_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insta_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -154,6 +158,7 @@
 				46974F2F269064FE00B10D39 /* CustomTextField.swift */,
 				46974F2D269064FE00B10D39 /* FeedCell.swift */,
 				4697503826997A9F00B10D39 /* UserCell.swift */,
+				46BE1BCB26B3B803002E6DEC /* CommentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				46974F3D2690654100B10D39 /* SearchController.swift */,
 				46974F3C2690654000B10D39 /* ProfileController.swift */,
 				469750A626A5318600B10D39 /* UploadPostController.swift */,
+				46BE1BC926B3B6A2002E6DEC /* CommentConrtoller.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -362,10 +368,12 @@
 				46974F412690654100B10D39 /* MainTabController.swift in Sources */,
 				46974F32269064FE00B10D39 /* CustomTextField.swift in Sources */,
 				469750A726A5318600B10D39 /* UploadPostController.swift in Sources */,
+				46BE1BCA26B3B6A2002E6DEC /* CommentConrtoller.swift in Sources */,
 				46771FEC2690613000205646 /* AppDelegate.swift in Sources */,
 				4697078926A799E600736405 /* Post.swift in Sources */,
 				4697503926997A9F00B10D39 /* UserCell.swift in Sources */,
 				46974F442690654100B10D39 /* ProfileController.swift in Sources */,
+				46BE1BCC26B3B803002E6DEC /* CommentCell.swift in Sources */,
 				4697503B269AD5B600B10D39 /* ProfileHeaderViewModel.swift in Sources */,
 				46974F5726944AB800B10D39 /* ProfileHeader.swift in Sources */,
 				46974F30269064FE00B10D39 /* FeedCell.swift in Sources */,

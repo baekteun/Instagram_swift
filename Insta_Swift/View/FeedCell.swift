@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol FeedCellDelegate:class {
+    func cell(_ cell: FeedCell, whantsToShowCommentsFor post: Post)
+}
+
 class FeedCell: UICollectionViewCell{
     
     
