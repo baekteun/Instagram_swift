@@ -32,6 +32,8 @@ class CommentInputAccessoryView: UIView{
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        autoresizingMask = .flexibleHeight
+        
         addSubview(postButton)
         postButton.anchor(top: topAnchor, right: rightAnchor, paddingRight: 8)
         postButton.setDimensions(height: 50, width: 50)
