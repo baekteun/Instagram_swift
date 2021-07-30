@@ -42,6 +42,7 @@
 		469750AD26A5429300B10D39 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469750AC26A5429300B10D39 /* PostService.swift */; };
 		46BE1BCA26B3B6A2002E6DEC /* CommentConrtoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE1BC926B3B6A2002E6DEC /* CommentConrtoller.swift */; };
 		46BE1BCC26B3B803002E6DEC /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE1BCB26B3B803002E6DEC /* CommentCell.swift */; };
+		46BE1BCE26B3BD3E002E6DEC /* CommentInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE1BCD26B3BD3E002E6DEC /* CommentInputAccessoryView.swift */; };
 		CE5331620F15F25873252634 /* Pods_Insta_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5DFACD56721B0952CDBC9A /* Pods_Insta_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		469750AC26A5429300B10D39 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		46BE1BC926B3B6A2002E6DEC /* CommentConrtoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentConrtoller.swift; sourceTree = "<group>"; };
 		46BE1BCB26B3B803002E6DEC /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		46BE1BCD26B3BD3E002E6DEC /* CommentInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputAccessoryView.swift; sourceTree = "<group>"; };
 		7E153084015DFF6B57322A7C /* Pods-Insta_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insta_Swift.debug.xcconfig"; path = "Target Support Files/Pods-Insta_Swift/Pods-Insta_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		CC5DFACD56721B0952CDBC9A /* Pods_Insta_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insta_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -159,6 +161,7 @@
 				46974F2D269064FE00B10D39 /* FeedCell.swift */,
 				4697503826997A9F00B10D39 /* UserCell.swift */,
 				46BE1BCB26B3B803002E6DEC /* CommentCell.swift */,
+				46BE1BCD26B3BD3E002E6DEC /* CommentInputAccessoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BE1BCE26B3BD3E002E6DEC /* CommentInputAccessoryView.swift in Sources */,
 				4697078B26AAE42200736405 /* PostViewModel.swift in Sources */,
 				46974F402690654100B10D39 /* ImageSelectorController.swift in Sources */,
 				46974F5B26948DEC00B10D39 /* Constants.swift in Sources */,
