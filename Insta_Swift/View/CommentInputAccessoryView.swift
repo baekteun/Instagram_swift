@@ -15,6 +15,7 @@ class CommentInputAccessoryView: UIView{
         iv.placeholderText = "Enter Comment.."
         iv.font = UIFont.systemFont(ofSize: 15)
         iv.isScrollEnabled = false
+        iv.placeholdershouldCenter = true
         return iv
     }()
     
@@ -49,6 +50,10 @@ class CommentInputAccessoryView: UIView{
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override var intrinsicContentSize: CGSize{
+        return .zero
     }
     
     // MARK: - Actions
