@@ -20,6 +20,8 @@ class FeedCell: UICollectionViewCell{
         didSet{ configure()}
     }
     
+    weak var delegate: FeedCellDelegate?
+    
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = . scaleAspectFill
@@ -59,6 +61,7 @@ class FeedCell: UICollectionViewCell{
         let button = UIButton(type: .system )
         button.setImage(#imageLiteral(resourceName: "comment"), for: .normal)
         button.tintColor = .black
+        button.addTarget(self, action: #selector(didTabComments), for: .touchUpInside)
         return button
     }()
     
@@ -134,6 +137,11 @@ class FeedCell: UICollectionViewCell{
     
     @objc func DidTabusername(){
         print("DEBUG : Did Tab Username")
+    }
+    
+    @objc func didTabComments(){
+        guard let viewModel = viewModel else { return }
+        delegate?.cell(self, whantsToShowCommentsFor: viewModel.post)
     }
     
     // MARK: - Helpers

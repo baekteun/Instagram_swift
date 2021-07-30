@@ -24,6 +24,7 @@ class CommentController: UICollectionViewController{
     
     func configureCollectionView(){
         collectionView.backgroundColor = .white
+        navigationItem.title = "Comments"
         collectionView.register(CommentCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
 }
@@ -31,7 +32,7 @@ class CommentController: UICollectionViewController{
 // MARK: - UICollectionViewDataSource
 
 extension CommentController{
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
     
